@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "ff-helpers": ["helpers/index.js"],
+      "ff-components": ["components/index.js"],
+      "ff-app-routes": ["config/routes.js"],
+      "ff-rematch": ["rematch/index.js"],
+    }
+  }
+}

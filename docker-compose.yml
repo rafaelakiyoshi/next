@@ -1,0 +1,17 @@
+version: "3.5"
+services:
+  cleaning:
+    container_name: f-cleaning-${ENV}
+    image: f-cleaning-${ENV}
+    build:
+      context: .
+      args:
+        ENV: ${ENV}
+    ports:
+      - "5000:5000"
+    volumes:
+      - "/tmp:/tmp"
+      - "cleaning-static:/var/www/f-cleaning"
+    network_mode: "host"
+volumes:
+  cleaning-static:
